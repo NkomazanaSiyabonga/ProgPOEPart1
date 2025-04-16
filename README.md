@@ -55,3 +55,8 @@ cybersecurity	  General cybersecurity advice
 thank you      	Get a polite response
 no	            Return to main menu
 bye, exit	      End the conversation
+
+# References for code
+Website: DeepSeek, DeepseekChat, 2025, https://chat.deepseek.com/a/chat/s/81cb1c9d-3bbe-4328-9747-c111435805c7
+Website(Youtube), Bro Code, 2021, https://www.youtube.com/watch?v=wxznTygnRfQ
+Website(Youtube), The Code City, 2024, https://www.youtube.com/watch?v=4dkNn93DIx4
