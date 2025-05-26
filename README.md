@@ -6,43 +6,78 @@ https://github.com/NkomazanaSiyabonga/ProgPOEPart1
 Operating Manual for Chatbot Assistant
 # Cybersecurity Awareness Bot
 
-![Cybersecurity Bot ASCII Art](https://i.imgur.com/example.png) 
-*Example of the bot's ASCII art display*
+# Cybersecurity Awareness Chatbot
 
-## Table of Contents
-- [Description](#description)
-- [Features](#features)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Commands](#commands)
-- [Technical Details](#technical-details)
-- [Contributing](#contributing)
-- [License](#license)
+## 🛡️ Overview
 
-## Description
+This is a **Console-based C# Chatbot** that educates users about cybersecurity best practices in an interactive and engaging way. It responds to user input with advice on topics such as password safety, phishing scams, digital footprints, cyberbullying, and more.
 
-The Cybersecurity Awareness Bot is an interactive console application designed to educate users about essential cybersecurity practices. This bot provides information on topics like password security, phishing scams, safe browsing, and general cybersecurity tips through an engaging chat interface.
+The chatbot is designed to:
+- Help users understand cybersecurity in a conversational tone.
+- Use keyword detection to identify and respond to specific topics.
+- Provide random tips from a curated list for each cybersecurity topic.
+- Recognize simple sentiments like curiosity or fear and respond accordingly.
+- Use ASCII art and audio to create a friendly and inviting user experience.
 
-## Features
+---
 
-- 🎨 Interactive ASCII art introduction
-- 🔉 Audio welcome message (WAV format)
-- ✨ Typewriter effect for immersive text display
-- 🎨 Color-coded console output for better readability
-- 💬 Natural conversation flow with contextual responses
-- 📋 Help menu with available topics
-- ⏱️ Simulated "typing" effect for realistic interaction
+## 🧠 Features
 
-## Installation
+- **User Greeting & Personalization**: Asks for the user's name and uses it throughout the chat.
+- **Typewriter Text Animation**: Simulates typing for bot messages to enhance realism.
+- **Audio Welcome Message**: Plays a `.wav` file to welcome the user (if available).
+- **Topic Matching**: Matches user input to cybersecurity topics using aliases.
+- **Sentiment Detection**: Adjusts responses based on emotional cues like “worried” or “curious”.
+- **Randomized Tips**: Provides a random relevant tip from a list for each recognized topic.
+- **Clean Console UI**: Uses color-coded text and section dividers to enhance readability.
 
-1. **Prerequisites**:
-   - .NET 6.0 Runtime or later
-   - Windows OS (for audio playback functionality)
+---
 
-2. **Setup**:
-   ```bash
-   git clone https://github.com/yourusername/cybersecurity-bot.git
-   cd cybersecurity-bot/ProgPOEPart1
+## 💻 Technologies Used
+
+- **Language**: C#
+- **Framework**: .NET (Console Application)
+- **Audio Playback**: `System.Media.SoundPlayer`
+- **Text Effects**: `Thread.Sleep` for typewriter animation
+- **Data Structures**: Dictionaries and Lists for topic aliases and responses
+
+---
+
+## 🔧 How It Works
+
+1. **Startup**: The app displays ASCII art and plays a welcome sound.
+2. **User Name**: The user is prompted to enter their name.
+3. **Chat Loop**:
+   - The bot asks how it can help.
+   - User input is analyzed:
+     - If it matches a known topic → the bot responds with a random tip.
+     - If it contains emotional keywords → the bot acknowledges the sentiment.
+     - If the input is unclear → fallback responses guide the user.
+   - Loop continues until the user types "bye" or "exit".
+4. **Goodbye**: The bot says farewell and exits.
+
+---
+
+## 🧪 Example Topics the Bot Can Handle
+
+- Password Safety
+- Phishing Scams
+- Online Privacy
+- Digital Footprint
+- Cyber Bullying
+- Skills for Cybersecurity Careers
+- Types of Viruses
+- What to do if you’ve been hacked
+- General Cybersecurity Tips
+
+---
+
+## ▶️ How to Run the Project
+
+1. **Clone or Download the Repo**
+2. Open the `.csproj` file in Visual Studio or run it via command line.
+3. Ensure the `Welcome.wav` file is placed at:
+
 
 User commands for the ChatBot
 
